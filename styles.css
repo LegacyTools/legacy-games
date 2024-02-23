@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(/images/faaqpyikgt561.jpg);
+}
+
+header,
+footer {
+  padding: 7px 5px;
+  text-align: center;
+  color: white;
+}
+
+header {
+  background: url(/images/bg_header_aurora.jpg);
+}
+
+nav {
+  background: url(/images/obs_bkg.png);
+  color: white;
+  padding: 6.6px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 8%;
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar.right {
+  margin-left: auto;
+  background: #333;
+  color: white;
+  padding: 20px;
+  transition: background-color 0.5s;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar.show,
+.sidebar.show-right {
+  background: url(/images/faaqpyikgt561.jpg);
+}
+.news-images img {
+  max-width: 24%; /* Set maximum width for the images */
+  height: auto; /* Allow the height to adjust proportionally with the width */
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.image-grid img {
+  width: 20%;
+}
